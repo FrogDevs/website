@@ -1,5 +1,4 @@
 import "uno.css";
-// import '@unocss/reset/tailwind.css'
 import '@unocss/reset/antfu.css';
 import "remixicon/fonts/remixicon.css";
 
