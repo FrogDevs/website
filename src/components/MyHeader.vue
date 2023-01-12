@@ -11,7 +11,7 @@
         <!-- hero -->
         <div pt px="2.063rem" items-center>
             <div font="poppins" text="center" gap="0.625rem">
-                <h1 font="700" text="3.042rem" leading="3.75rem">Inovando o futuro</h1>
+                <h1 font="700" text="3.042rem black" leading="3.75rem">Inovando o futuro</h1>
                 <p text="1.563rem" leading="2.813rem text-#404545">FrogDevs transforma ideias em realidade com talento e dedicação.</p>
             </div>
         </div>
