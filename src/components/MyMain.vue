@@ -28,5 +28,9 @@ import MemberCard from './MemberCard.vue'
                 <MemberCard />
             </div>
         </div>
+        <div my="3.125rem" gap="1rem" text="1.563rem #404545 center">
+            <p>“Você deve ter paixão por uma ideia ou problema que quer resolver. Se você não tem paixão suficiente desde o começo, não vai aguentar a pressão.”</p>
+            <p>Steve Jobs</p>
+        </div>
     </main>
 </template>
