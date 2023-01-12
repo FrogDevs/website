@@ -16,5 +16,17 @@ import MemberCard from './MemberCard.vue'
             <!-- background gradient -->
             <hr mt="1.563rem" h="0.313rem" b-none bg-green>
         </div>
+        <!-- Integrantes -->
+        <div font="poppins" text="center" gap="2.063rem">
+            <p text="1.563rem #404545">Integrantes</p>
+            <!-- cards-membros -->
+            <div gap="0.938rem">
+                <MemberCard />
+                <MemberCard />
+                <MemberCard />
+                <MemberCard />
+                <MemberCard />
+            </div>
+        </div>
     </main>
 </template>
