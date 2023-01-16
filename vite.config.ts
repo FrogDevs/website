@@ -17,7 +17,8 @@ export default defineConfig({
         presetWebFonts({
           provider: 'google',
           fonts: {
-            poppins: 'Poppins'
+            poppins: 'Poppins',
+            ptserif: 'PT Serif'
           }
         }),
         presetAttributify()
