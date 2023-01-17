@@ -3,26 +3,29 @@ import TheCard from './TheCard.vue'
 import MemberCard from './MemberCard.vue'
 </script>
 <template>
-    <main flex justify-center relative z="10" overflow-hidden>
-        <img class="hidden lg:block" absolute z="0" top="-15rem" h="50rem" src="src/assets/wave.svg" alt="">
-        <div relative z="10" px="2.063rem lg:11.25rem" pt="2.063rem sm:0">
+    <main flex flex-col justify-center relative z="10" overflow-hidden>
+        <div pt="2.063rem sm:0" items-center w-full>
             <!-- cards -->
-            <div items-center justify-center lg:flex-row gap="2.063rem">
+            <div relative z="10" items-center justify-center md:flex-row gap="2.063rem">
                 <TheCard />
                 <TheCard />
             </div>
+            <img class="hidden lg:block" absolute z="0" top="-10rem xl:-5rem" h="50rem" w-full src="src/assets/wave.svg" alt="waves">
+        </div>
+        <div mt="lg:10rem xl:20rem" px="2.063rem lg:11.25rem">
             <!-- cliente -->
             <div my="2.5rem md:3.125rem" gap="0.781rem" text-center>
-                <p font="poppins" text="1.563rem #404545" leading="2.813rem">Serviços prestados a empresa</p>
-                <h2 font="ptserif 700" text="3.125rem black" leading="3.75rem">Equilíbrio Natural</h2>
-                <!-- background gradient -->
+                <p font="poppins" text="1.563rem gray @dark:darkGray" leading="2.813rem">
+                    Serviços prestados a empresa
+                </p>
+                <h2 font="ptserif 700" text="3.125rem black @dark:darkGraySd" leading="3.75rem">Equilíbrio Natural</h2>
                 <hr class="bg-radial" mt="1.563rem" h="0.313rem" b-none>
             </div>
             <!-- Integrantes -->
             <div font="poppins" text="center" gap="2.063rem md:3.125rem">
-                <p text="1.563rem #404545">Integrantes</p>
+                <p text="1.563rem gray @dark:darkGray">Integrantes</p>
                 <!-- cards-membros -->
-                <div class="2xl:flex 2xl:flex-row 2xl:gap-[3.038rem]" sm:grid grid-cols-2 lg:grid-cols-3 gap="0.938rem" justify-center>
+                <div class="2xl:flex 2xl:flex-row 2xl:gap-[3.038rem]" sm:grid grid-cols-2 lg:grid-cols-3 gap="0.938rem md:1.563rem" justify-center>
                     <MemberCard />
                     <MemberCard />
                     <MemberCard />
@@ -30,7 +33,7 @@ import MemberCard from './MemberCard.vue'
                     <MemberCard />
                 </div>
             </div>
-            <div my="3.125rem" gap="1rem" text="1.563rem #404545 center">
+            <div my="3.125rem" gap="1rem" text="1.563rem gray @dark:darkGraySd center">
                 <p>“Você deve ter paixão por uma ideia ou problema que quer resolver. Se você não tem paixão suficiente desde o começo, não vai aguentar a pressão.”</p>
                 <p>Steve Jobs</p>
             </div>

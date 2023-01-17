@@ -1,19 +1,32 @@
 <script setup lang="ts"></script>
 <template>
-    <div w="18.375rem xl:25rem" h="18.375rem" b un-border="#404545" rounded="0.781rem" font="poppins" bg-light>
-        <div class="card1" h-full w-full py="2.188rem" px="1.375rem" items-center justify-center text-center gap="0.625rem" rounded="0.781rem">
-            <h2 text="2.604rem black">Aplicação</h2>
-            <p text="1.25rem #404545">Aplicação multiplataforma para gerenciamento de estoque em 2 unidades físicas.</p>
+    <div w="18.375rem xl:25rem" h="18.375rem" b un-border="gray @dark:darkGraySm" rounded="0.781rem" font="poppins" bg="light @dark:dark">
+        <div class="card" h-full w-full py="2.188rem" px="1.375rem" items-center justify-center text-center gap="0.625rem" rounded="0.781rem">
+            <h2 text="2.604rem black @dark:light">Aplicação</h2>
+            <p text="1.25rem gray @dark:darkGraySd">
+                Aplicação multiplataforma para gerenciamento de estoque em 2 unidades físicas.
+            </p>
         </div>
     </div>
 </template>
 <style scoped>
-    .card1 {
+    .card {
         background: rgb(255,247,248);
-        background: linear-gradient(320deg, rgba(255,247,248,1) 25%, rgba(96,239,255,0.15) 50%, rgba(0,255,135,0.5) 75%); 
+        background: linear-gradient(143.15deg, #00FF87 8.37%, rgba(255, 247, 248, 1) 91.49%);
     }
     .card2 {
         background: rgb(255,247,248);
-        background: linear-gradient(140deg, rgba(255,247,248,1) 25%, rgba(0,255,135,0.05) 40%, rgba(96,239,255,0.5) 65%); 
+        background: linear-gradient(300deg, #60EFFF 0%, rgba(255, 247, 248, 1) 100%);
+    }
+    
+    @media (prefers-color-scheme: dark) {
+        .card {
+            background: rgb(0,8,7);
+            background: linear-gradient(143.15deg, #00FF87 8.37%, rgba(96, 239, 255, 0) 91.49%);
+        }
+        .card2 {
+            background: rgb(0,8,7);
+            background: linear-gradient(300deg, #60EFFF 0%, rgba(0, 163, 255, 0) 100%);
+        }
     }
 </style>

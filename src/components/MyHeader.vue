@@ -3,10 +3,10 @@ import HeaderEffect from './HeaderEffect.vue';
 </script>
 <template>
     <header flex flex-col w-full min-h="27.5rem" items-center>
-        <nav fixed z="20" flex h="4.688rem" p="1.375rem" w-full items-center justify-between un-border="#404545" b-b="0.1rem" backdrop-blur-md>
+        <nav fixed z="20" flex h="4.688rem" p="1.375rem" w-full items-center justify-between un-border="gray @dark:darkGray" b-b="0.1rem" backdrop-blur-md>
             <div flex="row" items-center gap="0.781rem">
                 <img src="src/assets/logo.svg" alt="logo">
-                <p font="poppins 700" text="1.563rem" uppercase>frogdevs</p>
+                <p font="poppins 700" text="1.563rem dark @dark:light" uppercase>frogdevs</p>
             </div>
             <div flex-row gap="1.563rem">
                 <i class="ri-menu-line ri-2x" sm:hidden cursor-pointer text-green />
@@ -20,8 +20,8 @@ import HeaderEffect from './HeaderEffect.vue';
             <!-- hero -->
             <div relative z="10" mt="4.688rem sm:4.688rem" pt="1rem sm:2.063rem" px="2.063rem" items-center>
                 <div h="sm:12.5rem" items-center sm:justify-center font="poppins" text="center" gap="0.625rem">
-                    <h1 font="700" text="3.042rem black" leading="3.75rem">Inovando o futuro</h1>
-                    <p text="1.563rem #404545" leading="2.813rem" w="sm:2/3 md:2/4">FrogDevs transforma ideias em realidade com talento e dedicação.</p>
+                    <h1 font="700" text="3.042rem dark @dark:light" leading="3.75rem">Inovando o futuro</h1>
+                    <p text="1.563rem gray @dark:darkGray" leading="2.813rem" w="sm:2/3 md:2/4">FrogDevs transforma ideias em realidade com talento e dedicação.</p>
                 </div>
             </div>
             <HeaderEffect absolute z="0" w="full" h="44.125rem" />

@@ -4,7 +4,7 @@ import MyMain from './components/MyMain.vue';
 import MyFooter from './components/MyFooter.vue';
 </script>
 <template>
-    <div bg-light>
+    <div bg="light @dark:dark">
         <MyHeader />
         <MyMain />
         <MyFooter />
