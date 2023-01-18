@@ -1,20 +1,24 @@
 <script setup lang="ts">
 import HeaderEffect from './HeaderEffect.vue';
+import TheMenu from './TheMenu.vue';
 </script>
 <template>
     <header flex flex-col w-full min-h="27.5rem" items-center>
-        <nav fixed z="20" flex h="4.688rem" p="1.375rem" w-full items-center justify-between un-border="gray @dark:darkGray" b-b="0.1rem" backdrop-blur-md>
-            <div flex="row" items-center gap="0.781rem">
-                <img src="src/assets/logo.svg" alt="logo">
-                <p font="poppins 700" text="1.563rem dark @dark:light" uppercase>frogdevs</p>
+        <nav fixed z="20" flex flex-col w-full backdrop-blur-md>
+            <div flex-row h="4.688rem" p="1.375rem" items-center justify-between un-border="gray @dark:darkGray" b-b="0.1rem">
+                <div flex="row" items-center gap="0.781rem">
+                    <img src="src/assets/logo.svg" alt="logo">
+                    <p font="poppins 700" text="1.563rem dark @dark:light" uppercase>frogdevs</p>
+                </div>
+                <div flex-row gap="1.563rem">
+                    <i class="ri-menu-line ri-2x" sm:hidden cursor-pointer text-green />
+                    <i class="ri-eye-2-line ri-2x hidden sm:block" cursor-pointer text-green />
+                    <i class="ri-earth-line ri-2x hidden sm:block" cursor-pointer text-green />
+                    <i class="ri-github-fill ri-2x hidden sm:block" cursor-pointer text-green />
+                    <i class="ri-instagram-line ri-2x hidden sm:block" cursor-pointer text-green />
+                </div>
             </div>
-            <div flex-row gap="1.563rem">
-                <i class="ri-menu-line ri-2x" sm:hidden cursor-pointer text-green />
-                <i class="ri-eye-2-line ri-2x hidden sm:block" cursor-pointer text-green />
-                <i class="ri-earth-line ri-2x hidden sm:block" cursor-pointer text-green />
-                <i class="ri-github-fill ri-2x hidden sm:block" cursor-pointer text-green />
-                <i class="ri-instagram-line ri-2x hidden sm:block" cursor-pointer text-green />
-            </div>
+            <TheMenu />
         </nav>
         <div w-full overflow-hidden>
             <!-- hero -->
