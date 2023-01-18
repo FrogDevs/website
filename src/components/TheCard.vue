@@ -1,11 +1,30 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+    const props = defineProps({
+        title: {
+            type: String,
+            required: true
+        },
+        content: {
+            type: String,
+            required: true
+        },
+        bgColor: {
+            type: Boolean,
+            default: true
+        }
+    })
+</script>
 <template>
-    <div w="18.375rem xl:25rem" h="18.375rem" b un-border="gray @dark:darkGraySm" rounded="0.781rem" font="poppins" bg="light @dark:dark">
-        <div class="card" h-full w-full py="2.188rem" px="1.375rem" items-center justify-center text-center gap="0.625rem" rounded="0.781rem">
-            <h2 text="2.604rem black @dark:light">Aplicação</h2>
-            <p text="1.25rem gray @dark:darkGraySd">
-                Aplicação multiplataforma para gerenciamento de estoque em 2 unidades físicas.
-            </p>
+    <div w="18.375rem xl:25rem" h="18.375rem" b 
+        un-border="gray @dark:darkGraySm" rounded="0.781rem" 
+        font="poppins" bg="light @dark:dark"
+    >
+        <div :class="bgColor ? 'card' : 'card2'" h-full w-full py="2.188rem" px="1.375rem" 
+            items-center justify-center text-center gap="0.625rem" 
+            rounded="0.781rem"
+        >
+            <h2 text="2.604rem black @dark:light">{{ props.title }}</h2>
+            <p text="1.25rem gray @dark:darkGraySd">{{ props.content }}</p>
         </div>
     </div>
 </template>

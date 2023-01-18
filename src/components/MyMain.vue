@@ -7,8 +7,15 @@ import MemberCard from './MemberCard.vue'
         <div pt="2.063rem sm:0" items-center w-full>
             <!-- cards -->
             <div relative z="10" items-center justify-center md:flex-row gap="2.063rem">
-                <TheCard />
-                <TheCard />
+                <TheCard 
+                    title="Aplicação"
+                    content="Aplicação multiplataforma para gerenciamento de estoque em 2 unidades"
+                />
+                <TheCard
+                    title="Website"
+                    content="Website com formas de contato e disponibilidade de produtos em loja."
+                    :bg-color="true"
+                />
             </div>
             <img class="hidden lg:block" absolute z="0" top="-10rem xl:-5rem" h="50rem" w-full src="src/assets/wave.svg" alt="waves">
         </div>
