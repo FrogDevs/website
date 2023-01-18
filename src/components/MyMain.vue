@@ -14,7 +14,6 @@ import MemberCard from './MemberCard.vue'
                 <TheCard
                     title="Website"
                     content="Website com formas de contato e disponibilidade de produtos em loja."
-                    :bg-color="true"
                 />
             </div>
             <img class="hidden lg:block" absolute z="0" top="-10rem xl:-5rem" h="50rem" w-full src="src/assets/wave.svg" alt="waves">
@@ -32,12 +31,15 @@ import MemberCard from './MemberCard.vue'
             <div font="poppins" text="center" gap="2.063rem md:3.125rem">
                 <p text="1.563rem gray @dark:darkGray">Integrantes</p>
                 <!-- cards-membros -->
-                <div class="2xl:flex 2xl:flex-row 2xl:gap-[3.038rem]" sm:grid grid-cols-2 lg:grid-cols-3 gap="0.938rem md:1.563rem" justify-center>
-                    <MemberCard />
-                    <MemberCard />
-                    <MemberCard />
-                    <MemberCard />
-                    <MemberCard />
+                <div 
+                    class="2xl:flex 2xl:flex-row" sm:grid grid-cols-2 lg:grid-cols-3 
+                    gap="1.563rem 2xl:3.038rem" justify-items-center justify-center
+                >
+                    <MemberCard name="Helena Costa" role="Design" />
+                    <MemberCard name="Italo Santos" role="Documentação" />
+                    <MemberCard name="João Oliveira" role="Design" />
+                    <MemberCard name="Leandro Eduardo" role="Documentação" />
+                    <MemberCard name="Vinícius Costa" role="Full Stack e Design" />
                 </div>
             </div>
             <div my="3.125rem" gap="1rem" text="1.563rem gray @dark:darkGraySd center">

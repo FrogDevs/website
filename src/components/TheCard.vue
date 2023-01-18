@@ -1,17 +1,12 @@
 <script setup lang="ts">
-    const props = defineProps({
-        title: {
-            type: String,
-            required: true
-        },
-        content: {
-            type: String,
-            required: true
-        },
-        bgColor: {
-            type: Boolean,
-            default: true
-        }
+    interface Props {
+        title: string,
+        content: string,
+        bgColor: boolean
+    }
+
+    const props = withDefaults(defineProps<Props>(), {
+        bgColor: true
     })
 </script>
 <template>
