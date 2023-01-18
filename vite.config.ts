@@ -1,16 +1,29 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import Unocss from 'unocss/vite';
-import { presetUno, presetTypography, presetWebFonts, presetAttributify  } from 'unocss'
+import presetUno from '@unocss/preset-uno'
+import presetMini from 'unocss/preset-mini'
+import presetWebFonts from '@unocss/preset-web-fonts'
+import presetAttributify from '@unocss/preset-attributify'
+import { presetTypography } from 'unocss'
 
 export default defineConfig({
-  plugins: [
-    vue({
-      reactivityTransform: true,
-    }),
-    Unocss({
+  plugins: [vue({ reactivityTransform: true }), Unocss({
+      theme: {
+        colors: {
+          'light': '#FFF7F8',
+          'green': '#00FF87',
+          'blue': '#60EFFF',
+          'gray': '#404545',
+          'graySd': '#19201F',
+          'dark': '#000807',
+          'darkGray': '#BFBABA',
+          'darkGraySd': '#E6DFE0',
+        },
+      },
       presets: [
         presetUno(),
+        presetMini(),
         presetTypography({
           selectorName: 'markdown'
         }),
@@ -22,21 +35,7 @@ export default defineConfig({
           }
         }),
         presetAttributify()
-      ],
-      theme: {
-        colors: {
-          'light': '#FFF7F8',
-          'dark': '#000807',
-          'green': '#00FF87',
-          'blue': '#60EFFF',
-          'gray': {
-            'light1': '#404545',
-            'light2': '#19201F',
-            'dark1': '#BFBABA',
-            'dark2': '#E6DFE0',
-          }
-        },
-      }
+      ]
     }),
   ],
 });
