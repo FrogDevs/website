@@ -6,25 +6,39 @@
         <div gap="0.625rem">
             <h2 font="bold" text="dark @dark:light">Idioma</h2>
             <div text="gray @dark:darkGraySd" gap="0.625rem">
-                <p>Inglês</p>
-                <p>Português</p>
+                <p hover:text-green>Inglês</p>
+                <p hover:text-green>Português</p>
             </div>
             <hr h="0.125rem" my="1.563rem" w-full b-none bg="gray @dark:darkGray" />
         </div>
         <div gap="0.625rem">
             <h2 font="bold" text="dark @dark:light">Redes Sociais</h2>
             <div text="gray @dark:darkGraySd" gap="0.625rem">
-                <p>Github</p>
-                <p>Instagram</p>
+                <a
+                    hover:text-green
+                    href="https://github.com/FrogDevs" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                >
+                    Github
+                </a>
+                <a
+                    hover:text-green
+                    href="https://www.instagram.com/frogdevs" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                >
+                    Instagram
+                </a>
             </div>
             <hr h="0.125rem" my="1.563rem" w-full b-none bg="gray @dark:darkGray" />
         </div>
         <div gap="0.625rem">
             <h2 font="bold" text="dark @dark:light">Tema</h2>
             <div text="gray @dark:darkGraySd" gap="0.625rem">
-                <p>Sistema</p>
-                <p>Claro</p>
-                <p>Escuro</p>
+                <p hover:text-green>Sistema</p>
+                <p hover:text-green>Claro</p>
+                <p hover:text-green>Escuro</p>
             </div>
             <hr h="0.125rem" my="1.563rem" w-full b-none bg="gray @dark:darkGray" />
         </div>
