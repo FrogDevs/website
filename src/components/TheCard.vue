@@ -2,7 +2,7 @@
     interface Props {
         title: string,
         content: string,
-        bgColor: boolean
+        bgColor?: boolean
     }
 
     const props = withDefaults(defineProps<Props>(), {
@@ -10,9 +10,10 @@
     })
 </script>
 <template>
-    <div w="18.375rem xl:25rem" h="18.375rem" b 
-        un-border="gray @dark:darkGraySm" rounded="0.781rem" 
-        font="poppins" bg="light @dark:dark"
+    <div 
+        w="18.375rem xl:25rem" h="18.375rem" b 
+        un-border="gray @dark:darkGraySm hover:green" rounded="0.781rem" 
+        font="poppins" bg="light @dark:dark" cursor-pointer
     >
         <div :class="bgColor ? 'card' : 'card2'" h-full w-full py="2.188rem" px="1.375rem" 
             items-center justify-center text-center gap="0.625rem" 
