@@ -11,7 +11,8 @@
   "dependencies": {
     "remixicon": "^2.5.0",
     "unocss": "^0.48.4",
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "vue-i18n": "9"
   },
   "devDependencies": {
     "@unocss/preset-attributify": "^0.48.0",
