@@ -2,6 +2,7 @@
     interface Props {
         title: string,
         content: string,
+        link: string,
         bgColor?: boolean
     }
 
@@ -10,10 +11,13 @@
     })
 </script>
 <template>
-    <div 
+    <a 
         w="18.375rem xl:25rem" h="18.375rem" b 
         un-border="gray @dark:darkGraySm hover:green" rounded="0.781rem" 
         font="poppins" bg="light @dark:dark" cursor-pointer
+        :href="props.link" 
+        target="_blank" 
+        rel="noopener noreferrer" 
     >
         <div :class="bgColor ? 'card' : 'card2'" h-full w-full py="2.188rem" px="1.375rem" 
             items-center justify-center text-center gap="0.625rem" 
@@ -22,7 +26,7 @@
             <h2 text="2.604rem black @dark:light">{{ props.title }}</h2>
             <p text="1.25rem gray @dark:darkGraySd">{{ props.content }}</p>
         </div>
-    </div>
+    </a>
 </template>
 <style scoped>
     .card {

@@ -57,12 +57,18 @@ document.addEventListener('keydown', (e) => {
                         cursor-pointer text-green
                         @click="enableMyModal('lang')"
                     />
-                    <i 
-                        class="ri-github-fill ri-2x hidden sm:block" 
+                    <a 
+                        class="ri-github-fill ri-2x hidden sm:block"
+                        href="https://github.com/FrogDevs" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
                         cursor-pointer text-green
                     />
-                    <i 
+                    <a 
                         class="ri-instagram-line ri-2x hidden sm:block" 
+                        href="https://www.instagram.com/frogdevs" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
                         cursor-pointer text-green
                     />
                 </div>

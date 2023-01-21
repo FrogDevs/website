@@ -51,7 +51,12 @@ function closeIfOutside() {
                 </div>
             </div>
             <div h-fit>
-                <p text="1.563rem green hover:blue" cursor-pointer>Cancelar [Esc]</p>
+                <p 
+                    text="1.563rem green hover:blue" cursor-pointer
+                    @click="$emit('disableModal')"
+                >
+                    Cancelar [Esc]
+                </p>
             </div>
         </div>
     </div>

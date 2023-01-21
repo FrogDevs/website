@@ -10,10 +10,12 @@ import MemberCard from '../components/MemberCard.vue'
                 <TheCard 
                     title="Aplicação"
                     content="Aplicação multiplataforma para gerenciamento de estoque em 2 unidades"
+                    link="https://github.com/FrogDevs/equilibrionatural-controle_estoque"
                 />
                 <TheCard
                     title="Website"
                     content="Website com formas de contato e disponibilidade de produtos em loja."
+                    link="https://github.com/FrogDevs/equilibrionatural-website"
                 />
             </div>
             <img class="hidden lg:block" absolute z="0" top="-10rem xl:-5rem" h="50rem" w-full src="src/assets/wave.svg" alt="waves">
