@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import MyHeader from './components/MyHeader.vue';
-import MyMain from './components/MyMain.vue';
-import MyFooter from './components/MyFooter.vue';
+import MyHeader from './layout/MyHeader.vue';
+import MyMain from './layout/MyMain.vue';
+import MyFooter from './layout/MyFooter.vue';
 </script>
 <template>
     <div bg="light @dark:dark">
