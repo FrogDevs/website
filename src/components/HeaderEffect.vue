@@ -1,11 +1,6 @@
 <script setup lang="ts">
-let theme = $ref('')
-
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    theme = '#000807'
-} else {
-    theme = '#FFF7F8'
-}
+import { useDark } from '@vueuse/core';
+const isDark = useDark();
 </script>
 <template>
     <svg top="2.5rem sm:0rem" viewBox="0 0 360 706" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,7 +10,8 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
     <g filter="url(#filter1_f_30_1099)">
     <path d="M-68.4173 134.533L261.913 -53.8021L259.85 326.439L-68.4173 134.533Z" fill="url(#paint1_linear_30_1099)"/>
     </g>
-    <path d="M647 0C647 106.087 597.798 207.828 510.219 282.843C422.639 357.857 303.856 400 180 400C56.1439 400 -62.6393 357.857 -150.219 282.843C-237.798 207.828 -287 106.087 -287 6.03983e-05L180 0H647Z" :fill="theme"/>
+    <path v-if="isDark" d="M647 0C647 106.087 597.798 207.828 510.219 282.843C422.639 357.857 303.856 400 180 400C56.1439 400 -62.6393 357.857 -150.219 282.843C-237.798 207.828 -287 106.087 -287 6.03983e-05L180 0H647Z" fill="#000807"/>
+    <path v-else d="M647 0C647 106.087 597.798 207.828 510.219 282.843C422.639 357.857 303.856 400 180 400C56.1439 400 -62.6393 357.857 -150.219 282.843C-237.798 207.828 -287 106.087 -287 6.03983e-05L180 0H647Z" fill="#FFF7F8"/>
     <defs>
     <filter id="filter0_f_30_1099" x="-290.494" y="-291.205" width="997.105" height="997.105" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
     <feFlood flood-opacity="0" result="BackgroundImageFix"/>

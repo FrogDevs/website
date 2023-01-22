@@ -11,10 +11,11 @@
     })
 </script>
 <template>
-    <a 
+    <a
+        class="dark:border-dark dark:bg-dark"
         w="18.375rem xl:25rem" h="18.375rem" b 
-        un-border="gray @dark:darkGraySm hover:green" rounded="0.781rem" 
-        font="poppins" bg="light @dark:dark" cursor-pointer
+        un-border="gray hover:green" rounded="0.781rem" 
+        font="poppins" bg="light" cursor-pointer
         :href="props.link" 
         target="_blank" 
         rel="noopener noreferrer" 
@@ -23,8 +24,8 @@
             items-center justify-center text-center gap="0.625rem" 
             rounded="0.781rem"
         >
-            <h2 text="2.604rem black @dark:light">{{ props.title }}</h2>
-            <p text="1.25rem gray @dark:darkGraySd">{{ props.content }}</p>
+            <h2 class="dark:text-light" text="2.604rem black">{{ props.title }}</h2>
+            <p class="dark:text-darkGraySd" text="1.25rem gray">{{ props.content }}</p>
         </div>
     </a>
 </template>

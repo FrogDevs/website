@@ -21,18 +21,20 @@ document.addEventListener('keydown', (e) => {
 <template>
     <header flex flex-col w-full min-h="27.5rem" items-center>
         <nav 
-            :class="enableMenu ? 'bg-dark' : 'backdrop-blur-md'" 
+            :class="enableMenu ? 'bg-light dark:bg-dark' : 'backdrop-blur-md'" 
             fixed z="20" flex flex-col w-full
         >
-            <div 
+            <div
+                class="dark:border-darkGray"
                 flex-row h="4.688rem" p="1.375rem" 
-                items-center justify-between un-border="gray @dark:darkGray" 
+                items-center justify-between un-border="gray" 
                 b-b="0.1rem"
             >
                 <div flex="row" items-center gap="0.781rem">
                     <img src="src/assets/logo.svg" alt="logo">
-                    <p 
-                        font="poppins 700" text="1.563rem dark @dark:light" 
+                    <p
+                        class="dark:text-light"
+                        font="poppins 700" text="1.563rem dark" 
                         uppercase
                     >
                         frogdevs
@@ -87,13 +89,15 @@ document.addEventListener('keydown', (e) => {
                     font="poppins" text="center" gap="0.625rem"
                 >
                     <h1 
-                        font="700" text="3.042rem dark @dark:light" 
+                        class="dark:text-light" 
+                        font="700" text="3.042rem dark" 
                         leading="3.75rem"
                     >
                         Inovando o futuro
                     </h1>
                     <p 
-                        text="1.563rem gray @dark:darkGray" 
+                        class="dark:text-darkGray"
+                        text="1.563rem gray" 
                         leading="2.813rem" w="sm:2/3 md:2/4"
                     >
                         FrogDevs transforma ideias em realidade com talento e dedicação.</p>

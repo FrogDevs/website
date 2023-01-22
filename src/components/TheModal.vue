@@ -1,11 +1,13 @@
 <script setup lang="ts">
+import { useDark } from '@vueuse/core';
+
 const props = defineProps<{
     content: string
 }>();
 
 const emit = defineEmits(['disableModal']);
 
-function closeIfOutside() {
+function closeIfOutside(): void {
     const myModal: HTMLDivElement | null = document.querySelector('#myModal');
     const rect = myModal!.getBoundingClientRect();
 
@@ -23,6 +25,8 @@ function closeIfOutside() {
         }
     })
 }
+
+const isDark = useDark()
 </script>
 <template>
     <div 
@@ -32,8 +36,9 @@ function closeIfOutside() {
     >
         <div
             id="myModal"
+            class="dark:text-light dark:bg-dark"
             relative h="25rem" w="25rem" p="2.188rem" rounded="1.563rem"
-            font="poppins" text="dark @dark:light" bg="light @dark:dark"
+            font="poppins" text="dark" bg="light"
         >
             <div v-if="props.content === 'lang'" flex-auto gap="1.563rem">
                 <h1 text="1.875rem bold">Mude o idioma</h1>
@@ -45,9 +50,18 @@ function closeIfOutside() {
             <div v-else flex-auto gap="1.563rem">
                 <h1 text="1.875rem bold">Mude o tema</h1>
                 <div text="1.563rem" gap="0.625rem">
-                    <p w-fit text="hover:green" cursor-pointer>Sistema</p>
-                    <p w-fit text="hover:green" cursor-pointer>Claro</p>
-                    <p w-fit text="hover:green" cursor-pointer>Escuro</p>
+                    <p 
+                        w-fit text="hover:green" cursor-pointer 
+                        @click="isDark = false"
+                    >
+                        Claro
+                    </p>
+                    <p 
+                        w-fit text="hover:green" cursor-pointer
+                        @click="isDark = true"
+                    >
+                        Escuro
+                    </p>
                 </div>
             </div>
             <div h-fit>
