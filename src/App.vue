@@ -18,7 +18,6 @@ onMounted(() => {
     const hiddenElements = document.querySelectorAll('.animation--disabled');
     hiddenElements.forEach((el) => {
         observer.observe(el);
-        console.log(el);
     });
     
 })

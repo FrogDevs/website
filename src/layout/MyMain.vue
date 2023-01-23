@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import TheCard from '../components/TheCard.vue'
 import MemberCard from '../components/MemberCard.vue'
+import MainEffect from '../components/MainEffect.vue';
 </script>
 <template>
     <main flex flex-col justify-center relative z="10" overflow-hidden>
@@ -18,11 +19,10 @@ import MemberCard from '../components/MemberCard.vue'
                     link="https://github.com/FrogDevs/equilibrionatural-website"
                 />
             </div>
-            <img 
+            <MainEffect 
                 class="lg:block" absolute z="0" 
-                top="-10rem xl:-5rem" h="50rem" w-full 
-                src="src/assets/wave.svg" alt="waves"
-            >
+                top="-10rem xl:-5rem" h="50rem" w-full  
+            />
         </div>
         <div mt="lg:10rem xl:20rem" px="2.063rem lg:11.25rem">
             <!-- cliente -->

@@ -31,7 +31,7 @@ document.addEventListener('keydown', (e) => {
                 b-b="0.1rem"
             >
                 <div flex="row" items-center gap="0.781rem">
-                    <img src="src/assets/logo.svg" alt="logo">
+                    <img src="../assets/logo.svg" alt="logo">
                     <p
                         class="dark:text-light"
                         font="poppins 700" text="1.563rem dark" 
