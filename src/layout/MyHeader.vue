@@ -89,14 +89,14 @@ document.addEventListener('keydown', (e) => {
                     font="poppins" text="center" gap="0.625rem"
                 >
                     <h1 
-                        class="dark:text-light" 
+                        class="animation--disabled dark:text-light" 
                         font="700" text="3.042rem dark" 
                         leading="3.75rem"
                     >
                         Inovando o futuro
                     </h1>
                     <p 
-                        class="dark:text-darkGray"
+                        class="animation--disabled dark:text-darkGray"
                         text="1.563rem gray" 
                         leading="2.813rem" w="sm:2/3 md:2/4"
                     >

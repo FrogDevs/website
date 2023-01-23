@@ -9,17 +9,17 @@ import MemberCard from '../components/MemberCard.vue'
             <div relative z="10" items-center justify-center md:flex-row gap="2.063rem">
                 <TheCard 
                     title="Aplicação"
-                    content="Aplicação multiplataforma para gerenciamento de estoque em 2 unidades"
+                    content="Aplicação multiplataforma para gerenciamento de estoque em 2 unidades físicas."
                     link="https://github.com/FrogDevs/equilibrionatural-controle_estoque"
                 />
                 <TheCard
                     title="Website"
-                    content="Website com formas de contato e disponibilidade de produtos em loja."
+                    content="Website com formas de contato e disponibilidade de produtos em 2 unidades físicas."
                     link="https://github.com/FrogDevs/equilibrionatural-website"
                 />
             </div>
             <img 
-                class="hidden lg:block" absolute z="0" 
+                class="lg:block" absolute z="0" 
                 top="-10rem xl:-5rem" h="50rem" w-full 
                 src="src/assets/wave.svg" alt="waves"
             >
@@ -28,14 +28,14 @@ import MemberCard from '../components/MemberCard.vue'
             <!-- cliente -->
             <div my="2.5rem md:3.125rem" gap="0.781rem" text-center>
                 <p
-                    class="dark:text-darkGray"
+                    class="animation--disabled dark:text-darkGray"
                     font="poppins" text="1.563rem gray" 
                     leading="2.813rem"
                 >
                     Serviços prestados a empresa
                 </p>
                 <h2
-                    class="dark:text-darkGraySd"
+                    class="animation--disabled dark:text-darkGraySd"
                     font="ptserif 700" text="3.125rem black" 
                     leading="3.75rem"
                 >
@@ -45,7 +45,7 @@ import MemberCard from '../components/MemberCard.vue'
             </div>
             <!-- Integrantes -->
             <div font="poppins" text="center" gap="2.063rem md:3.125rem">
-                <p class="dark:text-darkGray" text="1.563rem gray">
+                <p class="animation--disabled dark:text-darkGray" text="1.563rem gray">
                     Integrantes
                 </p>
                 <!-- cards-membros -->
@@ -57,17 +57,21 @@ import MemberCard from '../components/MemberCard.vue'
                     <MemberCard name="Italo Santos" role="Documentação" />
                     <MemberCard name="João Oliveira" role="Design" />
                     <MemberCard name="Leandro Eduardo" role="Documentação" />
-                    <MemberCard name="Vinícius Costa" role="Full Stack e Design" />
+                    <MemberCard 
+                        name="Vinícius Costa" 
+                        role="Full Stack e Design" 
+                        link="https://vinicius-costa-links.vercel.app/" 
+                    />
                 </div>
             </div>
             <div
                 class="dark:text-darkGraySd" 
                 my="3.125rem" gap="1rem" text="1.563rem gray center"
             >
-                <p>
+                <p class="animation--disabled">
                     “Você deve ter paixão por uma ideia ou problema que quer resolver. Se você não tem paixão suficiente desde o começo, não vai aguentar a pressão.”
                 </p>
-                <p>Steve Jobs</p>
+                <p class="animation--disabled">Steve Jobs</p>
             </div>
         </div>
         <div class="steveJobs" absolute z="0" bottom="0" h="5rem" w-full></div>

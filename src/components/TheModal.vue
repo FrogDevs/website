@@ -13,7 +13,7 @@ function closeIfOutside(): void {
 
     // modal size
     const modalWidth: number = rect.x + 400
-    const modalHeight: number = rect.y + 400
+    const modalHeight: number = rect.y + 287.55
 
     document.addEventListener('click', (e) => {
         const cursorX = e.pageX;
@@ -36,9 +36,9 @@ const isDark = useDark()
     >
         <div
             id="myModal"
-            class="dark:text-light dark:bg-dark"
-            relative h="25rem" w="25rem" p="2.188rem" rounded="1.563rem"
-            font="poppins" text="dark" bg="light"
+            class="dark:text-light dark:bg-dark dark:shadow-lg dark:shadow-graySd"
+            relative h="fit" w="25rem" p="2.188rem" rounded="1.563rem" gap="1.563rem"
+            font="poppins" text="dark" bg="light" shadow-xl
         >
             <div v-if="props.content === 'lang'" flex-auto gap="1.563rem">
                 <h1 text="1.875rem bold">Mude o idioma</h1>

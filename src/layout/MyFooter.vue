@@ -13,7 +13,7 @@ const year = date.getFullYear();
         <div flex="row" items-center gap="0.781rem">
             <img src="src/assets/logo.svg" alt="logo">
             <p
-                class="dark:text-light"
+                class="animation--disabled dark:text-light"
                 font="poppins 700" text="1.563rem dark" 
                 uppercase
             >
@@ -21,13 +21,13 @@ const year = date.getFullYear();
             </p>
         </div>
         <p
-            class="dark:text-darkGraySd"
+            class="animation--disabled dark:text-darkGraySd"
             font="poppins" text="1.25rem center gray"
         >
             © {{ year }} Frogdevs, Inc. Todos os direitos reservados.
         </p>
         <p
-            class="dark:text-darkGraySd"
+            class="animation--disabled dark:text-darkGraySd"
             font="poppins" text="1.25rem center gray"
         >
             TCC em Análise e Desenvolvimento de Sistemas - ETEC Jardim Ângela.
