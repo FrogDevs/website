@@ -16,6 +16,7 @@
         w="18.375rem xl:25rem" h="18.375rem" b 
         un-border="gray hover:green" rounded="0.781rem" 
         font="poppins" bg="light" cursor-pointer
+        transition-colors duration-200 ease-out
         :href="props.link" 
         target="_blank" 
         rel="noopener noreferrer" 
