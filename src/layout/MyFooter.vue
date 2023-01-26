@@ -11,7 +11,7 @@ const year = date.getFullYear();
         gap="1.563rem" un-border="gray" b-t
     >
         <div flex="row" items-center gap="0.781rem">
-            <img src="../assets/logo.svg" alt="logo">
+            <img src="../assets/logo.png" alt="logo" h="3rem">
             <p
                 class="animation--disabled dark:text-light"
                 font="poppins 700" text="1.563rem dark" 
