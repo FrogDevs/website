@@ -1,5 +1,14 @@
 <script setup lang="ts">
 import { useDark } from '@vueuse/core';
+import { useI18n } from 'vue-i18n'
+
+const isDark = useDark()
+
+const t = useI18n();
+
+function changeLang(lang: string) {
+    t.locale.value = lang;
+}
 
 const props = defineProps<{
     content: string
@@ -25,8 +34,6 @@ function closeIfOutside(): void {
         }
     })
 }
-
-const isDark = useDark()
 </script>
 <template>
     <div 
@@ -41,26 +48,36 @@ const isDark = useDark()
             font="poppins" text="dark" bg="light" shadow-xl
         >
             <div v-if="props.content === 'lang'" flex-auto gap="1.563rem">
-                <h1 text="1.875rem bold">Mude o idioma</h1>
+                <h1 text="1.875rem bold">{{ $t('modal.lang.title') }}</h1>
                 <div text="1.563rem" gap="0.625rem">
-                    <p w-fit text="hover:green" cursor-pointer>Português</p>
-                    <p w-fit text="hover:green" cursor-pointer>Inglês</p>
+                    <p 
+                        w-fit text="hover:green" cursor-pointer 
+                        @click="changeLang('pt')"
+                    >
+                        {{ $t('modal.lang.firstLang') }}
+                    </p>
+                    <p 
+                        w-fit text="hover:green" cursor-pointer 
+                        @click="changeLang('en')"
+                    >
+                        {{ $t('modal.lang.secondLang') }}
+                    </p>
                 </div>
             </div>
             <div v-else flex-auto gap="1.563rem">
-                <h1 text="1.875rem bold">Mude o tema</h1>
+                <h1 text="1.875rem bold">{{ $t('modal.theme.title') }}</h1>
                 <div text="1.563rem" gap="0.625rem">
                     <p 
                         w-fit text="hover:green" cursor-pointer 
                         @click="isDark = false"
                     >
-                        Claro
+                        {{ $t('modal.theme.firstTheme') }}
                     </p>
                     <p 
                         w-fit text="hover:green" cursor-pointer
                         @click="isDark = true"
                     >
-                        Escuro
+                    {{ $t('modal.theme.secondTheme') }}
                     </p>
                 </div>
             </div>
@@ -69,7 +86,7 @@ const isDark = useDark()
                     text="1.563rem green hover:blue" cursor-pointer
                     @click="$emit('disableModal')"
                 >
-                    Cancelar [Esc]
+                    {{ $t('modal.cancel') }} [Esc]
                 </p>
             </div>
         </div>

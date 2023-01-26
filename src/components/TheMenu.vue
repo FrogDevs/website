@@ -1,7 +1,14 @@
 <script setup lang="ts">
 import { useDark } from '@vueuse/core';
+import { useI18n } from 'vue-i18n'
 
 const isDark = useDark();
+
+const t = useI18n()
+
+function changeLang(lang: string) {
+    t.locale.value = lang
+}
 </script>
 <template>
     <div
@@ -12,8 +19,8 @@ const isDark = useDark();
         <div gap="0.625rem">
             <h2 class="dark:text-light" font="bold" text="dark">Idioma</h2>
             <div class="dark:text-darkGraySd" text="gray" gap="0.625rem">
-                <p hover:text-green cursor-pointer w-fit>Inglês</p>
-                <p hover:text-green cursor-pointer w-fit>Português</p>
+                <p hover:text-green cursor-pointer w-fit @click="changeLang('pt')">Português</p>
+                <p hover:text-green cursor-pointer w-fit @click="changeLang('en')">Inglês</p>
             </div>
             <hr class="dark:bg-darkGray" h="0.125rem" my="1.563rem" w-full b-none bg="gray" />
         </div>

@@ -93,14 +93,15 @@ document.addEventListener('keydown', (e) => {
                         font="700" text="3.042rem dark" 
                         leading="3.75rem"
                     >
-                        Inovando o futuro
+                        {{ $t('header.title') }}
                     </h1>
                     <p 
                         class="animation--disabled dark:text-darkGray"
                         text="1.563rem gray" 
                         leading="2.813rem" w="sm:2/3 md:2/4"
                     >
-                        FrogDevs transforma ideias em realidade com talento e dedicação.</p>
+                        {{ $t('header.message') }}
+                    </p>
                 </div>
             </div>
             <HeaderEffect absolute z="0" w="full" h="44.125rem" />

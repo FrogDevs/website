@@ -24,13 +24,13 @@ const year = date.getFullYear();
             class="animation--disabled dark:text-darkGraySd"
             font="poppins" text="1.25rem center gray"
         >
-            © {{ year }} Frogdevs, Inc. Todos os direitos reservados.
+            © {{ year }} Frogdevs, Inc. {{ $t('footer.copy') }}
         </p>
         <p
             class="animation--disabled dark:text-darkGraySd"
             font="poppins" text="1.25rem center gray"
         >
-            TCC em Análise e Desenvolvimento de Sistemas - ETEC Jardim Ângela.
+            {{ $t('footer.course') }} - ETEC Jardim Ângela.
         </p>
     </footer>
 </template>

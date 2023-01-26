@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import Unocss from 'unocss/vite';
 import presetUno from '@unocss/preset-uno'
 import presetMini from 'unocss/preset-mini'
@@ -8,7 +9,7 @@ import presetAttributify from '@unocss/preset-attributify'
 import { presetTypography } from 'unocss'
 
 export default defineConfig({
-  plugins: [vue({ reactivityTransform: true }), Unocss({
+  plugins: [vue({ reactivityTransform: true }), VueI18nPlugin({}), Unocss({
       theme: {
         colors: {
           'light': '#FFF7F8',
