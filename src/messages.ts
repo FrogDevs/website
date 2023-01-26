@@ -26,7 +26,7 @@ export const messages = {
       course: "Trabalho de Conclusão de Curso.",
     },
     modal: {
-      cancel: 'Cancelar',
+      cancel: "Cancelar",
       lang: {
         title: "Idioma",
         firstLang: "Português",
@@ -67,7 +67,7 @@ export const messages = {
       course: "Course Conclusion Work",
     },
     modal: {
-      cancel: 'Cancel',
+      cancel: "Cancel",
       theme: {
         title: "Language",
         firstLang: "Portuguese",
@@ -79,5 +79,5 @@ export const messages = {
         secondTheme: "Dark",
       },
     },
-  }
+  },
 };
