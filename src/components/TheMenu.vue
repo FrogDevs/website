@@ -22,13 +22,13 @@ function changeLang(lang: string) {
     overflow-y-scroll
   >
     <div gap="0.625rem">
-      <h2 class="dark:text-light" font="bold" text="dark">Idioma</h2>
+      <h2 class="dark:text-light" font="bold" text="dark">{{ $t("modal.lang.title") }}</h2>
       <div class="dark:text-darkGraySd" text="gray" gap="0.625rem">
         <p hover:text-green cursor-pointer w-fit @click="changeLang('pt')">
-          Português
+          {{ $t("modal.lang.firstLang") }}
         </p>
         <p hover:text-green cursor-pointer w-fit @click="changeLang('en')">
-          Inglês
+          {{ $t("modal.lang.secondLang") }}
         </p>
       </div>
       <hr
@@ -41,7 +41,26 @@ function changeLang(lang: string) {
       />
     </div>
     <div gap="0.625rem">
-      <h2 class="dark:text-light" font="bold" text="dark">Redes Sociais</h2>
+      <h2 class="dark:text-light" font="bold" text="dark">{{ $t("modal.theme.title") }}</h2>
+      <div class="dark:text-darkGraySd" text="gray" gap="0.625rem">
+        <p hover:text-green cursor-pointer w-fit @click="isDark = false">
+          {{ $t("modal.theme.firstTheme") }}
+        </p>
+        <p hover:text-green cursor-pointer w-fit @click="isDark = true">
+          {{ $t("modal.theme.secondTheme") }}
+        </p>
+      </div>
+      <hr
+        class="dark:bg-darkGray"
+        h="0.125rem"
+        my="1.563rem"
+        w-full
+        b-none
+        bg="gray"
+      />
+    </div>
+    <div gap="0.625rem">
+      <h2 class="dark:text-light" font="bold" text="dark">{{ $t("socialTitle") }}</h2>
       <div class="dark:text-darkGraySd" text="gray" gap="0.625rem">
         <a
           hover:text-green
@@ -61,25 +80,6 @@ function changeLang(lang: string) {
         >
           Instagram
         </a>
-      </div>
-      <hr
-        class="dark:bg-darkGray"
-        h="0.125rem"
-        my="1.563rem"
-        w-full
-        b-none
-        bg="gray"
-      />
-    </div>
-    <div gap="0.625rem">
-      <h2 class="dark:text-light" font="bold" text="dark">Tema</h2>
-      <div class="dark:text-darkGraySd" text="gray" gap="0.625rem">
-        <p hover:text-green cursor-pointer w-fit @click="isDark = false">
-          Claro
-        </p>
-        <p hover:text-green cursor-pointer w-fit @click="isDark = true">
-          Escuro
-        </p>
       </div>
       <hr
         class="dark:bg-darkGray"

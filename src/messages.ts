@@ -8,7 +8,7 @@ export const messages = {
       card: {
         firstTitle: "Aplicação",
         firstMessage:
-          "Aplicação multiplataforma para gerenciamento de estoque em 2 unidades físicas.",
+          "Aplicação multiplataforma para o controle de estoque em 2 unidades físicas.",
         secondMessage:
           "Website com formas de contato e disponibilidade de produtos em 2 unidades físicas.",
       },
@@ -38,6 +38,7 @@ export const messages = {
         secondTheme: "Escuro",
       },
     },
+    socialTitle: "Redes Sociais",
   },
   en: {
     header: {
@@ -68,16 +69,17 @@ export const messages = {
     },
     modal: {
       cancel: "Cancel",
-      theme: {
+      lang: {
         title: "Language",
         firstLang: "Portuguese",
         secondLang: "English",
       },
-      lang: {
+      theme: {
         title: "Theme",
         firstTheme: "Light",
         secondTheme: "Dark",
       },
     },
+    socialTitle: "Social Networks",
   },
 };
