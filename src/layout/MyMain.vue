@@ -90,6 +90,7 @@ import MainEffect from "../components/MainEffect.vue";
             name="Vinícius Costa"
             :role="$t('main.members.vinicius')"
             link="https://vinicius-costa-links.vercel.app/"
+            pic="../assets/vinicius.avif"
           />
         </div>
       </div>

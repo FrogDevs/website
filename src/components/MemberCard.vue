@@ -9,10 +9,12 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   pic: "",
 });
+
 </script>
 <template>
   <div class="member animation--disabled" items-center gap="0.625rem md:1rem">
     <a
+      :class="props.pic ? 'image' : ''"
       class="dark:border-darkGray hover:border-blue"
       h="12.25rem"
       w="12.25rem"
@@ -23,6 +25,9 @@ const props = withDefaults(defineProps<Props>(), {
       ease-out
       rounded="1.563rem"
       cursor-pointer
+      bg-center
+      bg-no-repeat
+      bg-cover
       :href="props.link"
       target="_blank"
       rel="noopener noreferrer"
@@ -33,3 +38,8 @@ const props = withDefaults(defineProps<Props>(), {
     </div>
   </div>
 </template>
+<style scoped>
+  .image {
+    background-image: url("../assets/vinicius.avif");
+  }
+</style>
