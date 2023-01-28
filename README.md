@@ -18,6 +18,15 @@ Website oficial do time de TCC Frogdevs. Landing page em formato SPA (Single Pag
 
 Projeto feito pela equipe [Frogdevs](https://github.com/FrogDevs) para o Trabalho de Conclusão de Curso da Etec Jardim Ângela.
 
+* [Atribuições](#atribuições)
+* [Recursos](#recursos)
+* [Tech Stack](#tech-stack)
+* [Lições Aprendidas](#lições-aprendidas)
+* [Otimizações](#otimizações)
+* [Demo](#demo)
+* [Relacionados](#relacionados)
+* [Licença](#licença)
+
 ## Atribuições:
 
   - **Fontes:**
@@ -35,11 +44,17 @@ Projeto feito pela equipe [Frogdevs](https://github.com/FrogDevs) para o Trabalh
 
 ## Tech Stack
 
-**Client:** [Vite](https://vitejs.dev), [Vue](https://vuejs.org), [UnoCSS](https://github.com/unocss/unocss), [VueUse](https://vueuse.org/), [Vue I18n](https://vue-i18n.intlify.dev/)
+**Client:** [Vite](https://vitejs.dev), [Vue](https://vuejs.org), [UnoCSS](https://github.com/unocss/unocss), [VueUse](https://vueuse.org/) e [Vue I18n](https://vue-i18n.intlify.dev/)
 
 ## Lições aprendidas
 
 **Quais desafios foram enfrentados e como foram sobressaídos?**
+
+Desing
+
+Fechar modal
+
+Internacionalização
 
 ## Otimizações
 
