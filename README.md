@@ -49,11 +49,11 @@ Website oficial do time de TCC Frogdevs. Landing page em formato SPA (Single Pag
 
 **Quais desafios foram enfrentados e como foram sobressaídos?**
 
-Desing
+Foi um grande desafio projetar o web design, sendo um processo que envolveu muita criativade e inspirações, tais como: [Turbo](https://turbo.build/) e o website [Steam Deck](https://www.steamdeck.com/). Foi buscada uma identidade única para representar a equipe com cores fortes e chamativas que funcionassem bem tanto em uma tema claro como em um tema escuro. Além disso, buscamos uma estética moderna usando: Gradientes, vetores e animações.
 
-Fechar modal
+A lógica para fechar os modais foi feita manualmente. Primeiro obtemos a área e as cordenadas do modal. Depois, observamos o click do usuário. Se esse click é feito fora da área do modal ele é fechado.
 
-Internacionalização
+Adicionar internacionalização a um website é um desafio que requer dedicação e atenção aos detalhes. Isso envolve adaptar o conteúdo do website para diferentes idiomas e culturas, a fim de atender a um público global.
 
 ## Otimizações
 
