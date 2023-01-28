@@ -16,8 +16,6 @@ Website oficial do time de TCC Frogdevs. Landing page em formato SPA (Single Pag
 
 ## Apêndice
 
-Projeto feito pela equipe [Frogdevs](https://github.com/FrogDevs) para o Trabalho de Conclusão de Curso da Etec Jardim Ângela.
-
 * [Atribuições](#atribuições)
 * [Recursos](#recursos)
 * [Tech Stack](#tech-stack)
@@ -29,9 +27,10 @@ Projeto feito pela equipe [Frogdevs](https://github.com/FrogDevs) para o Trabalh
 
 ## Atribuições:
 
-  - **Fontes:**
-    - [Poppins](https://fonts.google.com/specimen/Poppins)
-    - [PT Serif](https://fonts.google.com/specimen/PT+Serif)
+ - [Figma - Web Desing]()
+ - Fontes:
+   - [Poppins](https://fonts.google.com/specimen/Poppins)
+   - [PT Serif](https://fonts.google.com/specimen/PT+Serif)
   
  - [Ícones: Remixicon](https://github.com/Remix-Design/remixicon)
  - [useDark](https://vueuse.org/core/usedark/#usedark)
@@ -44,7 +43,7 @@ Projeto feito pela equipe [Frogdevs](https://github.com/FrogDevs) para o Trabalh
 
 ## Tech Stack
 
-**Client:** [Vite](https://vitejs.dev), [Vue](https://vuejs.org), [UnoCSS](https://github.com/unocss/unocss), [VueUse](https://vueuse.org/) e [Vue I18n](https://vue-i18n.intlify.dev/)
+**Front-end:** [Vite](https://vitejs.dev), [Vue](https://vuejs.org), [UnoCSS](https://github.com/unocss/unocss), [VueUse](https://vueuse.org/) e [Vue I18n](https://vue-i18n.intlify.dev/)
 
 ## Lições aprendidas
 
@@ -102,7 +101,7 @@ Inicie o servidor
 
 ## Relacionados
 
-Veja outro projetos relacionado
+Veja outros projetos relacionados
 
 - [Equilíbrio Natural - Controle de estoque](https://github.com/FrogDevs/equilibrionatural-controle_estoque)
 - [Equilíbrio Natural - Website](https://github.com/FrogDevs/Equilibrio-Natural-Website)
