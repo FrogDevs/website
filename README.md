@@ -27,7 +27,7 @@ Website oficial do time de TCC Frogdevs. Landing page em formato SPA (Single Pag
 
 ## Atribuições:
 
- - [Figma - Web Desing]()
+ - [Figma - Web Desing](https://www.figma.com/community/file/1201319533908803616)
  - Fontes:
    - [Poppins](https://fonts.google.com/specimen/Poppins)
    - [PT Serif](https://fonts.google.com/specimen/PT+Serif)
